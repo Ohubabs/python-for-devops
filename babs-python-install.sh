@@ -6,4 +6,5 @@ sudo hostnamectl set-hostname python
 sudo chown python:python -R /etc/ssh/sshd_config
 sudo sed -i "/^[^#]*PasswordAuthentication[[:space:]]no/c\PasswordAuthentication yes" /etc/ssh/sshd_config
 sudo service sshd restart
-
+sudo apt update
+sudo apt install python3-pip
