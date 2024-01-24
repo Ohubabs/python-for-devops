@@ -11,3 +11,5 @@ def lambda_handler(event, context):
             )
 
 #Remember to adjust function execution time above 3 secs of it won't work.
+#In addition, permissions for DescribeVolumes, DescribeVolumestatus, and DeleteVolume are 
+#granted to the default/custom lambda execution role being used
